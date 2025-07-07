@@ -1,0 +1,337 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Navigation */
+nav {
+  background-color: #222;
+  color: white;
+  padding: 1rem 0;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00b894;
+}
+
+.logo .web {
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #00b894;
+}
+
+/* Home Section */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  color: white;
+  text-align: center;
+}
+.home-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.highlight {
+  color: #00b894;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #00b894;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #019875;
+}
+/* About Me Section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+.about-section .container {
+  max-width: 900px;
+  margin: auto;
+}
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.skills-list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+.skills-list li::before {
+  content: '✔';
+  color: #00b894;
+  position: absolute;
+  left: 0;
+}
+
+/* Services Section */
+.services-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+.services-section .container {
+  max-width: 1000px;
+  margin: auto;
+}
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+.services-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.service-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.service-box h3 {
+  color: #00b894;
+  margin-bottom: 10px;
+}
+/* Projects Section */
+.projects-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+.projects-section .container {
+  max-width: 1000px;
+  margin: auto;
+}
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+.projects-section p {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.project-card h3 {
+  margin: 10px 0;
+  color: #00b894;
+}
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2c3e50;
+  border: 1px solid #00b894;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.project-card a:hover {
+  background-color: #00b894;
+  color: white;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+.contact-section .container {
+  max-width: 800px;
+  margin: auto;
+}
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.contact-info a {
+  color: #00b894;
+  text-decoration: none;
+}
+.contact-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.contact-form button {
+  padding: 12px;
+  border: none;
+  background-color: #00b894;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.contact-form button:hover {
+  background-color: #019875;
+}
+
+/* Footer */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.footer .container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+.footer .socials {
+  margin-top: 10px;
+}
+.footer .socials a {
+  margin: 0 10px;
+  color: #00b894;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer .socials a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .home-section {
+    padding: 40px 20px;
+    height: auto;
+    text-align: left;
+  }
+
+  .projects-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* Animation Styles */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-box:nth-child(1) { animation-delay: 0.2s; }
+.service-box:nth-child(2) { animation-delay: 0.4s; }
+.service-box:nth-child(3) { animation-delay: 0.6s; }
+.service-box:nth-child(4) { animation-delay: 0.8s; }
+/* Repeat for project cards */
